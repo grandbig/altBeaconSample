@@ -77,6 +77,7 @@ public class MainActivity extends ActionBarActivity implements BeaconConsumer {
             // モニタリングの開始
             beaconManager.startMonitoringBeaconsInRegion(new Region("unique-id-001", identifier, null, null));
         } catch(RemoteException e) {
+            // 例外が発生した場合
             e.printStackTrace();
         }
     }
