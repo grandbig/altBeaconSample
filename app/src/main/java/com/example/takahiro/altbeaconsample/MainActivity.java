@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity implements BeaconConsumer {
     // iBeaconのデータを認識するためのParserフォーマット
     public static final String IBEACON_FORMAT = "m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24";
     // UUIDの作成
-    private Identifier identifier = Identifier.parse("434B4666-E4B2-4B78-8C13-901AFEE3DBB6");
+    private Identifier identifier = Identifier.parse("55430405-8DA3-4D08-AAA4-8C5D8FB60165");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
