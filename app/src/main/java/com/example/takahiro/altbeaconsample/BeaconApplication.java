@@ -37,6 +37,7 @@ public class BeaconApplication extends Application implements BootstrapNotifier 
         // iBeaconのデータを受信できるようにParserを設定
         beaconManager = BeaconManager.getInstanceForApplication(this);
         beaconManager.getBeaconParsers().add(new BeaconParser().setBeaconLayout(IBEACON_FORMAT));
+        beaconManager.setForegroundBetweenScanPeriod(1000);
         beaconManager.setBackgroundBetweenScanPeriod(1000);
 
         // UUIDの作成
